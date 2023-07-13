@@ -24,6 +24,7 @@ public class AddressableManager : MonoBehaviour
     void Start()
     {
         Addressables.InitializeAsync().Completed += AddressableManager_Completed;
+        Debug.Log("Test for Upload");
     }
 
     private void AddressableManager_Completed(AsyncOperationHandle<IResourceLocator> obj)
